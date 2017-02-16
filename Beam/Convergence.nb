@@ -1,0 +1,152 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3820,        143]
+NotebookOptionsPosition[      2880,        107]
+NotebookOutlinePosition[      3243,        123]
+CellTagsIndexPosition[      3200,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Convergence", "Title",
+ CellChangeTimes->{{3.6962214280815334`*^9, 3.696221430465229*^9}}],
+
+Cell["Yang Long", "Author",
+ CellChangeTimes->{{3.6962214372169456`*^9, 3.6962214383453884`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Model", "Subsubsection",
+ CellChangeTimes->{{3.6962214326571817`*^9, 3.6962214334977903`*^9}}],
+
+Cell[BoxData[
+ FormBox["", TraditionalForm]], "DisplayFormulaNumbered"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Stable Conditions", "Subsubsection",
+ CellChangeTimes->{{3.6962232738435836`*^9, 3.696223277026834*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Courant\[Dash]Friedrichs\[Dash]Lewy condition", "Subsubsubsection",
+ CellChangeTimes->{3.6962232821894836`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[PartialD]", "2"], 
+      RowBox[{"\[PartialD]", 
+       SuperscriptBox["t", "2"]}]], "u"}], "-", 
+    RowBox[{
+     SuperscriptBox["c", "2"], 
+     FractionBox[
+      RowBox[{
+       SuperscriptBox["\[PartialD]", "2"], "u"}], 
+      RowBox[{"\[PartialD]", 
+       SuperscriptBox["x", "2"]}]]}]}], "=", "0"}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6962232860372047`*^9, 3.6962233179388003`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Von Neumann stability analysis", "Subsubsubsection",
+ CellChangeTimes->{3.6962233359314823`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    FractionBox["\[PartialD]", 
+     RowBox[{"\[PartialD]", "t"}]], "u"}], "=", 
+   RowBox[{"\[Alpha]", " ", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[PartialD]", "2"], 
+      RowBox[{"\[PartialD]", 
+       SuperscriptBox["x", "2"]}]], "u"}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.6962233520188704`*^9, 3.696223367570853*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["FDTD", "Subsubsubsection",
+ CellChangeTimes->{{3.696223369690374*^9, 3.6962233702027144`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"i", 
+    RowBox[{
+     FractionBox["\[PartialD]", 
+      RowBox[{"\[PartialD]", "t"}]], "u"}]}], "=", 
+   RowBox[{"H", " ", "u"}]}], TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.696223372922697*^9, 3.696223393962515*^9}, {
+  3.6962234825141244`*^9, 3.69622350461876*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{775, 679},
+WindowMargins->{{Automatic, 33}, {55, Automatic}},
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (2015\:5e747\:67087\
+\:65e5)",
+StyleDefinitions->"Cambria Article.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 96, 1, 83, "Title"],
+Cell[679, 25, 97, 1, 58, "Author"],
+Cell[CellGroupData[{
+Cell[801, 30, 100, 1, 30, "Subsubsection"],
+Cell[904, 33, 71, 1, 30, "DisplayFormulaNumbered"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1012, 39, 110, 1, 30, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[1147, 44, 117, 1, 30, "Subsubsubsection"],
+Cell[1267, 47, 528, 17, 54, "DisplayFormulaNumbered"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1832, 69, 102, 1, 30, "Subsubsubsection"],
+Cell[1937, 72, 423, 13, 54, "DisplayFormulaNumbered"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2397, 90, 100, 1, 30, "Subsubsubsection"],
+Cell[2500, 93, 340, 9, 51, "DisplayFormulaNumbered"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
