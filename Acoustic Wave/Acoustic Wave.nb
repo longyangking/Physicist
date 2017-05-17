@@ -1,0 +1,108 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2753,         99]
+NotebookOptionsPosition[      2261,         77]
+NotebookOutlinePosition[      2655,         94]
+CellTagsIndexPosition[      2612,         91]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Acoustic Wave", "Title",
+ CellChangeTimes->{{3.7040142696496344`*^9, 3.7040142707410717`*^9}}],
+
+Cell["Yang Long", "Author",
+ CellChangeTimes->{{3.7040142742573366`*^9, 3.7040142765281124`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Model", "Subsubsection",
+ CellChangeTimes->{{3.7040142779534187`*^9, 3.7040142784967356`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Rho]", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[PartialD]", "2"], 
+      RowBox[{"\[PartialD]", 
+       SuperscriptBox["t", "2"]}]], 
+     SubscriptBox["u", "i"]}]}], "=", 
+   RowBox[{
+    RowBox[{"\[Del]", "\[CenterDot]", 
+     RowBox[{"(", 
+      RowBox[{"\[Rho]", " ", 
+       SubsuperscriptBox["c", "t", "2"], 
+       RowBox[{"\[Del]", 
+        SubscriptBox["u", "i"]}]}], ")"}]}], "+", 
+    RowBox[{"\[Del]", "\[CenterDot]", 
+     RowBox[{"(", 
+      RowBox[{"\[Rho]", " ", 
+       SubsuperscriptBox["c", "t", "2"], 
+       FractionBox[
+        RowBox[{"\[PartialD]", 
+         OverscriptBox["u", "\[RightVector]"]}], 
+        RowBox[{"\[PartialD]", 
+         SubscriptBox["x", "i"]}]]}], ")"}]}], "+", 
+    RowBox[{
+     FractionBox["\[PartialD]", 
+      RowBox[{"\[PartialD]", 
+       SubscriptBox["x", "i"]}]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SubsuperscriptBox["\[Rho]c", "l", "2"], "-", 
+         RowBox[{"2", "\[Rho]", " ", 
+          SubsuperscriptBox["c", "t", "2"]}]}], ")"}], 
+       RowBox[{"\[Del]", "\[CenterDot]", 
+        OverscriptBox["u", "\[RightVector]"]}]}], ")"}]}]}]}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.704014280141138*^9, 3.7040144086013165`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{775, 693},
+WindowMargins->{{Automatic, -13}, {43, Automatic}},
+Magnification:>1.6 Inherited,
+FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (2015\:5e747\:67087\
+\:65e5)",
+StyleDefinitions->"Cambria Article.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 100, 1, 131, "Title"],
+Cell[683, 25, 97, 1, 92, "Author"],
+Cell[CellGroupData[{
+Cell[805, 30, 100, 1, 49, "Subsubsection"],
+Cell[908, 33, 1325, 40, 135, "DisplayFormulaNumbered"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
