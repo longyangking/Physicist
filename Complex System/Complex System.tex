@@ -1,0 +1,69 @@
+\documentclass[%
+ reprint,
+ amsmath,amssymb,
+ aps,
+rmp,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Complex System}% Force line breaks with \\
+
+\author{Yang Long}
+ \email{longyang\_123@yeah.net}
+\affiliation{
+School of Physics Sciences and Engineering, Tongji University, Shanghai 200092, China
+}
+
+\date{\today}
+
+\begin{abstract}
+A basic review of Complex System
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Definition}
+
+\section{Dynamic Equation}
+Now, consider a dynamical network consisting of $N$ identical linearly and diffusively coupled nodes, with each node being an $n$-dimensional dynamical system. The state equations of the network are:
+\begin{equation}
+\dot{x}_i = f(x_i) + c \sum_{j=1}^{N} a_{ij} \Gamma x_j,\qquad i = 1,2,...,N.
+\label{eq:lineardynamicequation}
+\end{equation}
+
+\section{Properties}
+
+\section{Numerical calculation and convergence}
+
+\subsection{Runge Kutta}
+
+\subsection{Finite difference time domain}
+
+\section{Classical Models}
+\subsection{Discrete nonlinear Schr$\ddot{o}$dinger equation}
+\begin{equation}
+i \frac{d\Psi_n}{dt} = \sum_m V_{n,m} \Psi_m - \gamma |\Psi_n|^2 \Psi_n
+\end{equation}
+
+\begin{equation}
+i \frac{d\Psi}{d\tau} = M \Psi - \chi D(|\Psi|^2) \Psi
+\end{equation}
+
+\begin{equation}
+M \Psi = \lambda \Psi
+\end{equation}
+
+\section{Applications}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
