@@ -1,5 +1,5 @@
 # Physicist
-Demo code of computational physics
+Demo code and notes of computational physics
 
 ## Description
 Open .ipynb with Jupyter  

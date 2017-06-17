@@ -6,6 +6,17 @@ __pycache__/
 # C extensions
 *.so
 
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.pdf
+*.ps
+*.bib
+
+
 # Distribution / packaging
 .Python
 env/

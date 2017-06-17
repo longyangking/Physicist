@@ -1,0 +1,115 @@
+\documentclass[%
+ reprint,
+ amsmath,amssymb,
+ aps,
+rmp,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Multiphysics}% Force line breaks with \\
+
+\author{Yang Long}
+ \email{longyang_123@yeah.net}
+\affiliation{
+School of Physics Sciences and Engineering, Tongji University, Shanghai 200092, China
+}
+
+\date{\today}
+
+\begin{abstract}
+A basic review of Multi-physics simulation
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Universal Mathematical Models}
+
+\subsection{Partial Differential Equation(PDE)}
+Coefficient Form:
+\begin{equation}
+e\frac{\partial^2 u}{\partial t^2} + d \frac{\partial u}{\partial t} + \nabla\cdot(-c \nabla u-\alpha u +\gamma) + \beta\cdot \nabla u + \alpha u = f
+\label{eq:coefficientform}
+\end{equation}
+
+General Form:
+\begin{equation}
+e\frac{\partial^2 u}{\partial t^2} + d \frac{\partial u}{\partial t} + \nabla\cdot\Gamma = f
+\label{eq:generalform}
+\end{equation}
+
+Weak Form:
+\begin{equation}
+0 = \int_{\Omega} g \partial V
+\label{eq:weakform}
+\end{equation}
+
+\subsection{Boundary}
+
+\subsection{Source}
+
+\subsection{Classical PDEs}
+Wave equation:
+\begin{equation}
+e\frac{\partial^2 u}{\partial t^2} + \nabla\cdot(-c\nabla u) =f
+\label{eq:waveequation}
+\end{equation}
+
+Laplace Equation:
+\begin{equation}
+\nabla\cdot(-\nabla u)=0
+\label{eq:laplaceequation}
+\end{equation}
+
+Poisson Equation:
+\begin{equation}
+\nabla\cdot(- c\nabla u)=f
+\label{eq:poissonequation}
+\end{equation}
+
+Helmholtz Equation:
+\begin{equation}
+\nabla\cdot(- c\nabla u) + \alpha u =f
+\label{eq:helmholtzequation}
+\end{equation}
+
+Heat Equation:
+\begin{equation}
+d \frac{\partial u}{\partial t} + \nabla\cdot(- c\nabla u) =f
+\label{eq:heatequation}
+\end{equation}
+
+Convection-Diffusion Equation:
+\begin{equation}
+d \frac{\partial u}{\partial t} + \nabla\cdot(- c\nabla u)  + \beta\cdot\nabla u=f
+\label{eq:convectiondiffusionequation}
+\end{equation}
+
+\section{Physical Field}
+
+\subsection{The motion of fluids}
+The Navier-Stokes equations govern the motion of fluids and can be seen as Newton's second law of motion for fluids.
+\begin{equation}
+\rho (\frac{\partial \bm{u}}{\partial t} + \bm{u}\cdot\nabla\bm{u})=  -\nabla\rho + \nabla\cdot(\mu(\nabla\bm{u} + (\nabla\bm{u})^T) - \frac{2}{3}\mu(\nabla\cdot\bm{u})\bm{I}) + \bm{F}
+\label{eq:navierstokesequation}
+\end{equation}
+where $\bm{u}$ is the fluid velocity, $p$ is the fluid pressure, $\rho$ is the fluid density, and $\mu$ is the fluid dynamic viscosity. There are four terms in Navier-stokes equations: (1) $\rho (\frac{\partial \bm{u}}{\partial t} + \bm{u}\cdot\nabla\bm{u})$: the inertial forces; (2)$-\nabla\rho$: the pressure forces; (3)$\nabla\cdot(\mu(\nabla\bm{u} + (\nabla\bm{u})^T) - \frac{2}{3}\mu(\nabla\cdot\bm{u})\bm{I})$: viscous forces; (4)$\bm{F}$: the external forces applied to the fluid.
+
+Solving together with the continuity equation, we can get:
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \nabla\cdot(\rho\bm{u})=0
+\label{eq:continueNavierStokesequation}
+\end{equation}
+The Navier-Stokes equations represent the conservation of momentum, while the continuity equation represents the conservation of mass.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
