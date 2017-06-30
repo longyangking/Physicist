@@ -1,0 +1,66 @@
+\documentclass[%
+ reprint,
+ amsmath,amssymb,
+ aps,
+rmp,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Photonics Crystal}% Force line breaks with \\
+
+\author{Yang Long}
+ \email{longyang\_123@yeah.net}
+\affiliation{
+School of Physics Sciences and Engineering, Tongji University, Shanghai 200092, China
+}
+
+\date{\today}
+
+\begin{abstract}
+A basic review of Photonics Crystal
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Band Structure}
+
+\section{Tight Binding Treatments}
+For example, we will consider the scalar case of a 2D periodic array of $N$ infinitely long dielectric cylinders in vacuum, with periodic boundary conditions and with the incident plane wave $\bm{E}$ polarized. We assume the normalized electric field for each band to be given by
+\begin{equation}
+E_n(\bm{r},\bm{k}) = \frac{c_n^1(k)}{\sqrt{N}}e^{i\bm{k}\bm{r}} + \frac{c_n^2(k)}{\sqrt{N}} \sum_{\bm{R}} \Psi_n(\bm{r}-\bm{R})e^{i\bm{k}\bm{R}}
+\end{equation}
+where $n=0,1,2...$ is the band's index and $\Psi_n(\bm{r}-\bm{R})$ with an angular symmetry $\Psi \sim cos(n\theta)$ stands for the wave function of the $n$th resonance localized at $\bm{R}$.
+
+\subsection{Linear combination of atomic orbitals(LCAO)}
+\begin{equation}
+H = \begin{pmatrix}
+\langle s|H|s \rangle & \langle s|H|p_x \rangle & \langle s|H|p_y \rangle & \langle s|H|p_z \rangle \\
+\langle p_x|H|s \rangle & \langle p_x|H|p_x \rangle & \langle p_x|H|p_y \rangle & \langle p_x|H|p_z \rangle \\
+\langle p_y|H|s \rangle & \langle p_y|H|p_x \rangle & \langle p_y|H|p_y \rangle & \langle p_y|H|p_z \rangle  \\
+\langle p_z|H|s \rangle & \langle p_z|H|p_x \rangle & \langle p_z|H|p_y \rangle & \langle p_z|H|p_z \rangle 
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+h_{\lambda}(r) = \begin{pmatrix}
+\langle s|H|s \rangle & \lambda = ss\sigma \\
+\langle s|H|p_\parallel \rangle & \lambda = sp\sigma \\
+\langle p_\parallel|H|p_\parallel \rangle & \lambda = pp\sigma \\
+\langle p_{\perp}|H|p_{\perp} \rangle & \lambda = pp\pi \\
+\end{pmatrix}
+\end{equation}
+
+\section{Applications}
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
