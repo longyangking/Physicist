@@ -1,0 +1,63 @@
+\documentclass[%
+ reprint,
+ amsmath,amssymb,
+ aps,
+ rmp,
+]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Beam propagation}% Force line breaks with \\
+
+\author{Yang Long}%
+ \email{longyang\_123@yeah.net}
+\affiliation{%
+	School of Physics Sciences and Engineering, Tongji University, Shanghai 200092, China
+}%
+
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+A brief note for Beam propagation
+\end{abstract}
+
+\maketitle
+
+\section{Paraxial approximation}
+In the paraxial approximation of the Helmholtz equation, the complex amplitude $A$ can be expressed as
+\begin{equation}
+A(\bm{r}) = u(\bm{r})e^{ikz}
+\end{equation}
+where $\bm{u}$ represents the complex-valued amplitude which modulates the harmonic plane wave represented by the exponential factor. Then under a suitable assumption, $u$ approximately solves
+\begin{equation}
+\nabla^2_{\perp} u + 2ik\frac{\partial u}{\partial z} = 0
+\end{equation}
+where $\nabla^2_{\perp} = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}$ is the transverse part of Laplacian. This form provides solutions that describe the propagation of electromagnetic waves in the form of either paraboloidal waves or Gaussian beams. Most lasers emit beams with this form.
+
+The assumption under which the paraxial approximation is valid is that $z$ derivative of the amplitude function $u$ is a slowly-varying function of $z$:
+\begin{equation}
+\arrowvert \frac{\partial^2 u}{\partial z^2}\arrowvert \ll \arrowvert k \frac{\partial u}{\partial z}\arrowvert
+\end{equation}
+
+
+
+\end{document}
